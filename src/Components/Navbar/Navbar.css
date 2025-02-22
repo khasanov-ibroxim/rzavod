@@ -1,0 +1,132 @@
+nav {
+    width: 100%;
+    background: #323941;
+    padding: 15px 0px;
+    position: relative;
+}
+.nav_dropdown p{
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+nav .box,
+nav .null {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .box ul,
+nav .null ul {
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav .box ul li a,
+nav .null ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+
+nav .box .right,
+nav .null .right {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+nav .box .right svg,
+nav .null .right svg {
+    color: white;
+    font-size: 25px;
+}
+
+nav .box .right a.number,
+nav .null .right a.number {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.bars {
+    color: white;
+    display: none;
+}
+
+@media(max-width:1199px) {
+
+    nav .box ul li a,
+    nav .box .right a.number,
+    nav .null ul li a,
+    nav .null .right a.number {
+        font-size: 16px;
+    }
+
+    nav .box .right svg,
+    nav .null .right svg {
+        font-size: 20px;
+    }
+
+    nav .box ul,
+    nav .box .right,
+    nav .null ul,
+    nav .null .right {
+        grid-gap: 18px;
+    }
+}
+
+@media(max-width:991px) {
+
+
+
+    nav .box ul,
+    nav .null ul {
+        grid-gap: unset;
+        justify-content: space-between;
+    }
+
+    nav .box .right,
+    nav .null .right {
+        justify-content: center;
+        padding-top: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .bars {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+    nav .box ul,
+    nav .null ul {
+        display: grid;
+    }
+}
+
+@media(max-width:575px) {
+
+    nav .box ul li a,
+    nav .box .right a.number,
+    nav .null ul li a,
+    nav .null .right a.number {
+        font-size: 15px;
+    }
+
+    nav .box .right,
+    nav .null .right {
+        grid-gap: 5px;
+        justify-content: unset;
+    }
+}

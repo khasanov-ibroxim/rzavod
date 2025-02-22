@@ -1,0 +1,77 @@
+section.power{
+    width: 100%;
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 255px;
+    background: #0E0E16;
+    z-index: 1;
+}
+
+section.power h1.top{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+section.power p.top{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    padding-top: 18px;
+}
+section.power .right img,
+section.power .left img{
+    height: 100%;
+}
+section.power .right{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+section.power .left{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+
+@media(max-width:991px){
+    section.power .right{
+        bottom: 0px;
+    }
+}
+
+@media(max-width:767px){
+    section.power h1.top{
+        font-size: 45px;
+    }
+    section.power p.top{
+        font-size: 15px;
+    }
+    section.power .left{
+        height: 100%;
+    }
+    section.power{
+        padding: 70px 0px;
+    }
+}
+
+@media(max-width:575px){
+    section.power h1.top{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    section.power{
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    section.power .right{
+        position: unset;
+    }
+}

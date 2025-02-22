@@ -1,0 +1,305 @@
+section.compare .slick-arrow.slick-next,
+section.compare .slick-arrow.slick-prev {
+    /* background-color: #E31E24; */
+    /* color: white; */
+    width: 50px;
+    height: 50px;
+    border: 2px solid #E31E24;
+}
+
+section.compare .slick-arrow.slick-prev {
+    top: -30px;
+    left: 45%;
+    transform: translateY(-40%);
+}
+
+section.compare .slick-arrow.slick-next {
+    right: 45%;
+    top: -30px;
+    transform: translateY(-40%);
+}
+
+section.compare .slick-arrow.slick-next:focus,
+section.compare .slick-arrow.slick-prev:focus {
+    color: #E31E24;
+    background: white !important;
+}
+
+section.compare .slick-arrow.slick-next::before,
+section.compare .slick-arrow.slick-prev::before {
+    color: #E31E24;
+    width: 70px !important;
+    height: 70px !important;
+}
+
+section.compare .slick-arrow.slick-next:focus::before,
+section.compare .slick-arrow.slick-prev:focus::before {
+    color: #E31E24;
+}
+
+section.compare .slick-arrow.slick-next:hover,
+section.compare .slick-arrow.slick-prev:hover {
+    background: white;
+}
+
+
+section.compare {
+    width: 100%;
+    padding: 95px 0px;
+}
+
+section.compare h1.top {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #323941;
+}
+
+section.compare p.top {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #323941;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 70px;
+}
+
+section.compare .sa {
+    display: flex !important;
+    justify-content: center;
+}
+
+section.compare .sa .box img.foto {
+    width: 170px;
+    height: 180px;
+    object-fit: contain;
+}
+
+section.compare .sa .box p.name {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #323941;
+    margin-bottom: 0px;
+    padding-top: 17px;
+    padding-bottom: 28px;
+}
+
+section.compare .sa .box p.icon {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #E31E24;
+}
+
+section.compare .sa .box hr {
+    margin: 8px 0px 5px 0px;
+}
+
+section.compare .sa .box .title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #323941;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+section.compare .sa .box .price {
+    font-size: 25px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #323941;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+
+section.compare .sa .box button.bottom {
+    width: 185px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border: none;
+    background: #E31E24;
+}
+
+section.compare .bottomBox {
+    padding: 30px 65px 15px 50px;
+    display: flex;
+    align-items: center;
+    grid-gap: 40px;
+    margin-top: 120px;
+    border: 5px solid #E31E24;
+}
+
+section.compare .bottomBox img{
+    width: 280px;
+    height: 200px;
+    object-fit: contain;
+}
+
+section.compare .bottomBox h2.top{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #323941;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+section.compare .bottomBox h3.top{
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #323941;
+}
+
+
+@media(max-width:1199px){
+    section.compare .slick-arrow.slick-prev{
+        left: 43%;
+        margin-bottom: 20px;
+    }
+    section.compare .slick-arrow.slick-next{
+        right: 43%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:991px){
+    section.compare .slick-arrow.slick-prev{
+        left: 41%;
+    }
+    section.compare .slick-arrow.slick-next{
+        right: 41%;
+    }
+    section.compare .sa .box button.bottom{
+        width: 100%;
+    }
+}
+
+@media(max-width:767px){
+    section.compare{
+        padding: 70px 0px;
+    }
+    section.compare .slick-arrow.slick-prev{
+        left: 39%;
+    }
+    section.compare .slick-arrow.slick-next{
+        right: 39%;
+    }
+    section.compare h1.top{
+        font-size: 45px;
+    }
+    section.compare .sa .box p.name{
+        font-size: 15px;
+        line-height: 18px;
+        padding: 15px 0px;
+    }
+    section.compare .sa .box p.icon,
+    section.compare .sa .box .title{
+        font-size: 13px;
+    }
+    section.compare .sa .box .price{
+        font-size: 20px;
+        padding: 25px 0px 10px 0px;
+    }
+    section.compare .sa .box img.foto{
+        width: 100%;
+        height: 100px;
+    }
+
+    section.compare .sa .box button.bottom{
+        width: 90%;
+    }
+    section.compare .bottomBox{
+        margin-top: 70px;
+        display: grid;
+        padding: 30px;
+    }
+    section.compare .bottomBox img{
+        width: 100%;
+    }
+    section.compare .bottomBox h2.top{
+        font-size: 43px;
+        text-align: center;
+    }
+    section.compare .bottomBox h3.top{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+@media(max-width:575px){
+    section.compare{
+        padding: 50px 0px;
+    }
+
+    section.compare h1.top{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    section.compare .slick-arrow.slick-prev{
+        left: 30%;
+    }
+    
+    section.compare .slick-arrow.slick-next{
+        right: 30%;
+    }
+    section.compare .sa .box p.name{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    section.compare .sa{
+        display: unset !important;
+    }
+    section.compare .sa .box{
+        padding: 0px 1px;
+    }
+    section.compare .sa .box p.icon,
+     section.compare .sa .box .title{
+        font-size: 10px;
+        line-height: 15px;
+     }
+     section.compare .sa .box p.icon img{
+        width: 10px;
+     }
+     section.compare .sa .box .price{
+        font-size: 15px;
+        padding: 0px 0px 10px 0px;
+     }
+     section.compare .sa .box button.bottom{
+        font-size: 14px;
+        line-height: 15px;
+     }
+     section.compare .bottomBox{
+        margin-top: 50px;
+     }
+     section.compare .bottomBox h2.top{
+        font-size: 35px;
+        line-height: 40px;
+        padding-bottom: 5px;
+     }
+     section.compare .bottomBox h3.top{
+        font-size: 12px;
+     }
+}

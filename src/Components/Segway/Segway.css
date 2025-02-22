@@ -1,0 +1,116 @@
+section.segway {
+    width: 100%;
+    padding-top: 45px;
+}
+
+section.segway h1.top {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #323941;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+section.segway .box {
+    width: 100%;
+    position: relative;
+    height: 580px;
+}
+
+section.segway .box img.photo {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    margin: auto;
+}
+
+section.segway .box .left .foto {
+    position: absolute;
+    left: 0px;
+}
+section.segway .box .left .foto:nth-child(1) {
+    top: 30px;
+}
+section.segway .box .left .foto:nth-child(2) {
+    top: 70px;
+}
+section.segway .box .left .foto:nth-child(3) {
+    top: 100px;
+}
+section.segway .box .left .foto:nth-child(4) {
+    top: 110px;
+}
+section.segway .box .left .foto:nth-child(5){
+    top: 290px;
+}
+section.segway .box .left .foto:nth-child(6){
+    top: 320px;
+}
+section.segway .box .left .foto:nth-child(7){
+    top: 380px;
+}
+section.segway .box .left .foto:nth-child(8){
+    top: 420px;
+}
+
+section.segway .box .right .foto{
+    position: absolute;
+    right: 0px;
+}
+section.segway .box .right .foto:nth-child(1){
+    top: 50px;
+}
+section.segway .box .right .foto:nth-child(2){
+    top: 135px;
+}
+section.segway .box .right .foto:nth-child(3){
+    top: 170px;
+}
+section.segway .box .right .foto:nth-child(4){
+    top: 210px;
+}
+section.segway .box .right .foto:nth-child(5){
+    top: 250px;
+}
+section.segway .box .right .foto:nth-child(6){
+    top: 290px;
+}
+section.segway .box .right .foto:nth-child(7){
+    top: 330px;
+}
+section.segway .box .right .foto:nth-child(8){
+    top: 370px;
+}
+section.segway .box .right .foto:nth-child(9){
+    top: 410px;
+}
+
+
+@media(max-width:991px){
+    section.segway .box .left .foto,
+    section.segway .box .right .foto{
+        display: none;
+    }
+}
+
+@media(max-width:767px){
+    section.segway h1.top{
+        font-size: 55px;
+    }
+}
+
+@media(max-width:575px){
+    section.segway h1.top{
+        font-size: 40px;
+    }
+    section.segway .box,
+    section.segway .box img.photo{
+        height: 350px;
+    }
+}

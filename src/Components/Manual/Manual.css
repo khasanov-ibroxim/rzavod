@@ -1,0 +1,108 @@
+section.manual{
+    width: 100%;
+    background: #F5F5F5;
+    position: relative;
+    margin-top: 80px;
+    padding: 90px 0px;
+}
+section.manual .box{
+    padding: 25px 0px;
+    padding-right: 50px;
+    border: 5px solid #E31E24;
+    display: grid;
+    justify-content: flex-end;
+    background: #FFFFFF;
+}
+section.manual .box h1.top{
+margin-bottom: 0px;
+font-size: 50px;
+line-height: 60px;
+font-weight: 700;
+color: #323941;
+text-transform: uppercase;
+}
+section.manual .box .icon{
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    padding-top: 17px;
+    padding-bottom: 30px;
+}
+section.manual .box .icon p.pIcon{
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #323941;
+}
+section.manual .box button.bottom{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: none;
+    background: #E31E24;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+section.manual .foto{
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+}
+
+
+
+@media(max-width:1199px){
+    section.manual .foto{
+        left: -200px;
+    }
+}
+
+@media(max-width:991px){
+    section.manual .foto{
+        display: none;
+    }
+    section.manual .box{
+        justify-content: center;
+        padding-right: 0px;
+    }
+}
+
+@media(max-width:767px){
+    section.manual{
+        padding: 70px 0px;
+        margin-top: 60px;
+    }
+    section.manual .box h1.top{
+        font-size: 45px;
+    }
+    section.manual .box .icon{
+        grid-gap: 10px;
+    }
+    section.manual .box .icon p.pIcon{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:575px){
+    section.manual{
+        padding: 50px 0px;
+        margin-top: 40px;
+    }
+    section.manual .box h1.top{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    section.manual .box .icon{
+        display: grid;
+        padding: 15px 0px;
+    }
+}
