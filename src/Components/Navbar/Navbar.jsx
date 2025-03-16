@@ -55,7 +55,7 @@ function Navbar({onlyIcon = true}) {
                             <div className="right">
                                 <TelegramIcon/>
                                 <InstagramIcon/>
-                                <a href="tel:" className="number">+1 (888) 888-88-88</a>
+                                <a href="tel:+998712000711" className="number">+998 71 200 07 11</a>
                             </div>
                         </div>
                     </div>

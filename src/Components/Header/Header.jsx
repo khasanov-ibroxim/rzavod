@@ -6,12 +6,17 @@ import { Context } from '../../App'
 import {DataTwo, DataOne, DataIndex} from '../../Constants/index.jsx'
 import {useNavigate, useParams} from "react-router-dom";
 import {SwiperSlide , Swiper} from "swiper/react";
+import {useTranslation} from "react-i18next";
+
+
 
 function Header() {
     const { img, setImg } = useContext(Context)
     const {id} = useParams()
     const navigate = useNavigate();
     const matchScreen = window.matchMedia("(max-width: 800px)").matches
+    const {t} = useTranslation()
+
     return (
         <header>
             <div className="header-top">
@@ -20,7 +25,7 @@ function Header() {
                         <div className="col-lg-12">
                             <a href="#!"><img src={logo} alt="" className={"nav_logo"}/></a>
                             <div className="right">
-                               <a href={"tell:"}>Call</a>
+                               <a href={"tell:+998712000711"}>{t("contact")}</a>
                             </div>
                         </div>
                     </div>
@@ -48,9 +53,7 @@ function Header() {
                 </div>
             </div>
             <div className="bottom">
-                <p className="bottom">
-                    Free 1 day shipping within California.
-                </p>
+                <p className="bottom">{t("deliver_title")}</p>
             </div>
         </header>
     )

@@ -8,9 +8,11 @@ import One from './Page/One'
 import Two from './Page/Two'
 import Three from './Page/Three'
 import Four from './Page/Four'
+import {useTranslation} from "react-i18next";
+
 function Main() {
     const [count, setCount] = useState(1)
-
+    const {t} = useTranslation()
     return (
         <main>
             <div className="container">
@@ -19,9 +21,7 @@ function Main() {
                         <div onClick={() => setCount(1)} className={count == 1 ? 'active' : ''}>
                             <div className="box">
                                 <img src={icon1} alt="" />
-                                <p className="top">
-                                    Delivery within<br />
-                                    1 business day
+                                <p className="top" dangerouslySetInnerHTML={{__html:t("main.one.title")}}>
                                 </p>
                             </div>
                         </div>
@@ -31,8 +31,7 @@ function Main() {
                             <div className="box">
                                 <img src={icon2} alt="" />
                                 <p className="top">
-                                    Basic 1 year<br />
-                                    warranty
+                                    {t("main.two.title")}
                                 </p>
                             </div>
                         </div>
@@ -42,8 +41,7 @@ function Main() {
                             <div className="box">
                                 <img src={icon3} alt="" />
                                 <p className="top">
-                                    After Sales<br />
-                                    Support
+                                    {t("main.three.title")}
                                 </p>
                             </div>
                         </div>
@@ -53,8 +51,7 @@ function Main() {
                             <div className="box">
                              <img src={icon4} alt="" />
                                 <p className="top">
-                                    Up to 40 miles<br />
-                                    per charge
+                                    {t("main.four.title")}
                                 </p>
                             </div>
                         </div>

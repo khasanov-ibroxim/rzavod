@@ -1,7 +1,10 @@
 import React from 'react'
 import './Page.css'
-import img from '../../../Assisstents/img/OneImg.svg'
+import img from '../../../Assisstents/images/main/uzbekistan_map.png'
+import {useTranslation} from "react-i18next";
 function One() {
+    const {t} = useTranslation()
+
     return (
         <section className='page'>
             <div className="container">
@@ -9,11 +12,9 @@ function One() {
                     <div className="col-lg-12">
                         <div className="boxs">
                             <p className="top">
-                                WE ARE IN <br />
-                                LOS ANGELES, CA<br />
+                                {t("main.one.title_content")} <br/>
                                 <span>
-                                    Free California 1 day shipping.<br />
-                                    US Free Shipping 3-5 Days
+                                     {t("main.one.content")}
                                 </span>
                             </p>
                             <img src={img} alt="" />

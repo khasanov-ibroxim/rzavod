@@ -1,7 +1,9 @@
 import React from 'react'
 import './Page.css'
 import img from '../../../Assisstents/img/FourImg.svg'
+import {useTranslation} from "react-i18next";
 function Four() {
+    const {t} = useTranslation()
     return (
         <section className='page'>
             <div className="container">
@@ -9,10 +11,9 @@ function Four() {
                     <div className="col-lg-12">
                         <div className="boxs">
                             <p className="top">
-                                Up to 40 miles of range <br />
-                                on a single charge<br />
+                                {t("main.four.title_content")} <br/>
                                 <span>
-                                    With a range of up to 40 miles, the longest range on the market,<br /> and a 20˚uphill climbing angle, the KickScooter MAX allows you to<br /> ride from San Francisco Bay Area to Palo Alto on a single charge.
+                                    {t("main.four.content")}
                                 </span>
                             </p>
                             <img src={img} alt="" />
